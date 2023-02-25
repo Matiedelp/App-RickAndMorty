@@ -1,0 +1,38 @@
+.container{
+    background-color: rgba(8, 212, 28, 0.547);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    margin: 10px;
+}
+.textCont{
+    background: rgba(63, 217, 16, 0.469);
+    margin: 20px;
+    padding: 15px;
+    width: 30%;
+    border-radius: 10px;
+}
+
+.nameM{
+    color: rgb(10, 16, 26);
+    background: rgba(75, 171, 120, 0.548);
+    border-radius: 10px;
+    padding:4px;
+    margin: 5px;
+    
+}
+
+.imgCharac{
+    margin: 10px;
+    border-radius: 20%;
+}
+
+hr{
+    width: 90%;
+    border: 1px solid rgb(44, 228, 28);
+    border-radius: 10px;
+}
+.imagen{
+    margin-left: 10%;
+}
