@@ -38,7 +38,7 @@ const reducer = (state = initialState, action) => {
                     ? state.allCharacters.sort((a, b) => a.id - b.id) 
                     : state.allCharacters.sort((a, b) => b.id - a.id)
                 }
-
+            
     
         default:
             return {...state}

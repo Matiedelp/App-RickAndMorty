@@ -13,7 +13,7 @@ const Detail = ()=>{
     const [character, setCharacter] = useState([]);
 
     useEffect(() => {
-        fetch(`https://rickandmortyapi.com/api/character/${id}`)
+        fetch(`http://localhost:3001/rickandmorty/detail/${id}`)
            .then((response) => response.json())
            .then((char) => {
               if (char.name) {
@@ -36,11 +36,18 @@ const Detail = ()=>{
 
         <div className={styles.textCont}>
          <hr/>
+
          <h2 className={styles.nameM}>Name: {character.name}</h2>
+
          <hr/>
+
          <h3>Gender: {character.gender}</h3>
+
          <hr/>
+
          <h3>Species: {character.species}</h3>
+         <hr/>
+         <h3>Origin: {character?.origin?.name}</h3>
          <hr/>
         </div>
         <div className={styles.imagen}>

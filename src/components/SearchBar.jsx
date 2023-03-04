@@ -9,13 +9,15 @@ function SearchBar({onSearch}) {
    }
 
    return (
-      <div className={styles.formgroup}>
+   <div className={styles.containerSearch}>
 
-  <input type="input" value={character} onChange={handleChange} className={styles.formfield} placeholder="Buscar por id" name="name" id='name' required />
+      <div className={styles.inputrSearch}>
+         <input type="input" value={character} onChange={handleChange} className={styles.formfield} placeholder="Buscar por id" name="name" id='name' required />
 
-  <button className= {styles.button64} onClick={() => onSearch(character)}><span className='text'>Search</span></button> 
+      <button className= {styles.button64} onClick={() => onSearch(character)}><span className='text'>Search</span></button> 
+      </div>
 
-</div>
+   </div>
       
    );
 }

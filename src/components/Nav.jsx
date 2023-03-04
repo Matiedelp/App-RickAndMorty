@@ -8,15 +8,16 @@ const Nav = ({onSearch})=>{
 
      const login = useNavigate();
     return(
-   
-        <div className={styles.container}>
-            <button onClick={()=>{login("/Form")}}>login</button>
-            <Link to='/favorites'>Favorites</Link>
-            <SearchBar onSearch={onSearch}/>
+    <div className={styles.container}>
+        
+        <SearchBar onSearch={onSearch}/>
         
 
-
-        </div>
+        <button className={styles.logi} onClick={()=>{login("/Form")}}>login</button>
+        <button className={styles.favo}><Link to='/favorites'>Favorites</Link></button>
+        
+        
+    </div>
        
     )
 }
